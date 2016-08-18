@@ -77,6 +77,16 @@ svg {
   border: 1px solid #456;
 }
 
+.tooltip {
+  background: #333;
+  color: #eee;
+  border-radius: 2px;
+  font-size: 14px;
+  padding: 5px;
+  position: absolute;
+  text-align: left;
+}
+
 footer {
   background-color: #333;
   color: #ffe;
