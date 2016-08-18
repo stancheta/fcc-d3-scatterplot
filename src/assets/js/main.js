@@ -24,7 +24,7 @@
   };
 
   var handleData = function(data) {
-    var margin = {top: 200, right: 200, bottom: 70, left: 100},
+    var margin = {top: 200, right: 100, bottom: 70, left: 100},
       width = 900 - margin.left - margin.right,
       height = 800 - margin.top - margin.bottom;
 
@@ -99,7 +99,13 @@
     svg.append('g')
         .attr('class', 'x-axis')
         .attr('transform', 'translate( 0,' + (0) + ')')
-        .call(xAxis2);
+        .call(xAxis2)
+        .append('text')
+        .attr('y', -50)
+        .attr('x', 350)
+        .attr('dy', '.71em')
+        .style('text-anchor', 'middle')
+        .text('Minutes Behind Fastest Time');
   };
 
   // setup
